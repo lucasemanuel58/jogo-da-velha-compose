@@ -32,15 +32,17 @@ A regra de negócio **não depende do Android**: `core/` é Kotlin puro e por is
 
 ## Como rodar
 
-1. Abra a pasta no Android Studio (Arctic Fox ou mais novo; precisa de **JDK 17**).
+1. Abra a pasta no Android Studio e configure **Gradle JDK = 17** (`File > Project Structure > SDK Location`).
 2. Sincronize o Gradle e rode no emulator ou dispositivo.
 
-Pela linha de comando:
+Pela linha de comando (com `JAVA_HOME` apontando para um JDK 17):
 
 ```bash
 ./gradlew test          # testes de unidade
 ./gradlew assembleDebug # APK em app/build/outputs/apk/debug/
 ```
+
+Não quer buildar? Baixe o APK da [release v1.0.0](https://github.com/lucasemanuel58/jogo-da-velha-compose/releases/tag/v1.0.0).
 
 ## Testes
 
